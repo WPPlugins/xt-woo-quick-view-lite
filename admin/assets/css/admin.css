@@ -1,0 +1,200 @@
+/* Welcome Page */
+.wooqv-notice {
+  display: inline-block !important;
+  margin-top: 20px; }
+
+.xt-woo-quick-view-admin .menu-top.toplevel_page_xt-woo-quick-view {
+  font-size: 12.5px !important; }
+
+.xt-woo-quick-view-admin #wpbody-content {
+  min-height: 600px; }
+  .xt-woo-quick-view-admin #wpbody-content .about-wrap {
+    max-width: 1800px; }
+  .xt-woo-quick-view-admin #wpbody-content .wooqv-version {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    font-size: 20px;
+    background: #9b5c8f;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-align: center; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-version em {
+      display: block;
+      font-size: 9px;
+      margin-top: 5px;
+      line-height: 1; }
+    @media screen and (max-width: 782px) {
+      .xt-woo-quick-view-admin #wpbody-content .wooqv-version {
+        font-size: 14px;
+        padding: 5px 10px; } }
+  .xt-woo-quick-view-admin #wpbody-content .wooqv-logo {
+    margin: 15px 0 30px;
+    max-width: 200px;
+    border: 0; }
+    @media screen and (max-width: 782px) {
+      .xt-woo-quick-view-admin #wpbody-content .wooqv-logo {
+        width: 250px; } }
+  .xt-woo-quick-view-admin #wpbody-content h2.nav-tab-wrapper {
+    border-bottom: 0; }
+    @media screen and (max-width: 782px) {
+      .xt-woo-quick-view-admin #wpbody-content h2.nav-tab-wrapper {
+        margin-top: 20px; } }
+  .xt-woo-quick-view-admin #wpbody-content .nav-tab {
+    padding: 8px 15px;
+    border: 0;
+    box-shadow: none !important; }
+    @media screen and (max-width: 782px) {
+      .xt-woo-quick-view-admin #wpbody-content .nav-tab {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 0 2px; } }
+  .xt-woo-quick-view-admin #wpbody-content .nav-tab-active,
+  .xt-woo-quick-view-admin #wpbody-content .nav-tab-active:hover,
+  .xt-woo-quick-view-admin #wpbody-content .nav-tab-active:focus,
+  .xt-woo-quick-view-admin #wpbody-content .nav-tab-active:focus:active {
+    border-bottom: 0;
+    background: #fdfdfd;
+    color: #000; }
+  .xt-woo-quick-view-admin #wpbody-content .xt-refresh-link {
+    float: right;
+    text-decoration: none;
+    font-size: 16px; }
+    .xt-woo-quick-view-admin #wpbody-content .xt-refresh-link .dashicons {
+      font-size: 18px;
+      width: 18px;
+      height: 18px; }
+  .xt-woo-quick-view-admin #wpbody-content .wooqv-welcome-section {
+    box-shadow: 0 0px 10px 0 rgba(24, 24, 24, 0.07);
+    background: #fdfdfd;
+    padding: 30px 25px;
+    overflow: hidden; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-welcome-section h3 {
+      position: relative;
+      top: -5px;
+      margin: 0 0 .6em;
+      display: inline-block; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-welcome-section h4 {
+      margin-top: 0; }
+  .xt-woo-quick-view-admin #wpbody-content .wooqv-links-section {
+    overflow: hidden; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-links-section a {
+      display: block;
+      margin: 0 0 20px;
+      outline: none;
+      float: left;
+      clear: both;
+      box-shadow: none; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-links-section a:hover,
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-links-section a:focus {
+      outline: none;
+      box-shadow: none; }
+  .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section {
+    padding: 0; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section a {
+      text-align: center;
+      padding: 30px;
+      display: block;
+      font-size: 35px;
+      color: #242424;
+      text-decoration: none; }
+      .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section a:hover {
+        background-color: #242424;
+        color: #f9f9f9; }
+      .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section a span {
+        font-size: 60px;
+        overflow: hidden;
+        width: inherit;
+        height: inherit;
+        vertical-align: middle;
+        line-height: 50px;
+        margin-right: 10px; }
+      .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section a em {
+        display: block;
+        color: red;
+        font-size: 16px; }
+      @media screen and (max-width: 782px) {
+        .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section a {
+          padding: 20px;
+          font-size: 18px; }
+          .xt-woo-quick-view-admin #wpbody-content .wooqv-support-section a span {
+            font-size: 30px;
+            line-height: 30px; } }
+  .xt-woo-quick-view-admin #wpbody-content .wooqv-fullversion-section {
+    padding-top: 15px; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-fullversion-section p {
+      font-size: 18px; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-fullversion-section ul {
+      list-style: square;
+      padding-left: 20px; }
+    .xt-woo-quick-view-admin #wpbody-content .wooqv-fullversion-section .button {
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: 700; }
+
+.xt-woo-quick-view-admin.rtl #wpbody-content .wooqv-version {
+  left: 0;
+  right: inherit; }
+
+/* Changelog */
+.wooqv-changelog h4 {
+  margin-top: 0; }
+
+.wooqv-changelog ul {
+  padding: 0px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background: #fff;
+  overflow: hidden;
+  margin: 0 0 30px 0; }
+  .wooqv-changelog ul li {
+    margin: 0 !important;
+    display: block;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; }
+    .wooqv-changelog ul li strong {
+      background: #ffffcc;
+      color: #000;
+      padding: 1px 5px;
+      border-radius: 3px; }
+    .wooqv-changelog ul li:nth-child(even) {
+      background: #f9f9f9; }
+    .wooqv-changelog ul li .update-type {
+      padding: 1px 8px;
+      display: block;
+      border-radius: 3px;
+      text-align: center;
+      width: 70px;
+      float: left;
+      box-sizing: border-box;
+      font-size: 12px;
+      line-height: 24px;
+      color: #181818; }
+    .wooqv-changelog ul li .update-txt {
+      display: block;
+      padding-left: 85px;
+      box-sizing: border-box;
+      color: #181818;
+      line-height: 26px;
+      font-size: 14px; }
+      .wooqv-changelog ul li .update-txt a {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer; }
+    .wooqv-changelog ul li span.initial {
+      background: #e4e4a9; }
+    .wooqv-changelog ul li span.fix {
+      background: #f4c5c5; }
+    .wooqv-changelog ul li span.new {
+      background: #afe7af; }
+    .wooqv-changelog ul li span.enhance {
+      background: #bed4f2; }
+    .wooqv-changelog ul li span.update {
+      background: rgba(26, 224, 181, 0.3); }
+    .wooqv-changelog ul li span.support {
+      background: rgba(203, 160, 255, 0.38); }
+    .wooqv-changelog ul li span.extension {
+      background: rgba(255, 152, 0, 0.5); }

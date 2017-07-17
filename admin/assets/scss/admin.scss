@@ -1,0 +1,300 @@
+/* Welcome Page */
+
+.wooqv-notice{
+	display:inline-block!important;
+	margin-top: 20px;
+}
+
+.xt-woo-quick-view-admin {
+
+	.menu-top.toplevel_page_xt-woo-quick-view {
+    	font-size: 12.5px!important;
+	}
+	
+	#wpbody-content{
+	
+	    min-height: 600px;
+
+		.about-wrap{
+			max-width: 1800px;
+		}
+		
+		.wooqv-version {
+		    position: absolute;
+		    right: 0;
+		    top: 35px;
+		    font-size: 20px;
+		    background: #9b5c8f;
+		    color: #fff;
+		    padding: 10px 20px;
+		    border-radius: 3px;
+		    text-align: center;
+		    
+		    em{
+			    display:block;
+			    font-size:9px;
+			    margin-top:5px;
+			    line-height:1;
+			}
+
+		    @media screen and (max-width: 782px) {
+  
+			    &{
+			        font-size:14px;
+			        padding:5px 10px;
+			    }
+			}
+		}
+      
+	    .wooqv-logo{
+		    margin: 15px 0 30px;
+			max-width: 200px;
+			border:0;
+					    
+		    @media screen and (max-width: 782px) {
+	  
+			    &{
+			        width:250px;
+			    }
+			}
+	    }
+
+	    h2.nav-tab-wrapper{
+		    border-bottom:0;
+		    
+		    @media screen and (max-width: 782px) {
+	  
+			    &{
+			        margin-top:20px;
+			    }
+			}
+	    }
+	    
+	    .nav-tab {
+		    padding: 8px 15px;
+		    border:0;
+		    box-shadow: none!important;
+		    
+		    @media screen and (max-width: 782px) {
+	  
+			    &{
+				    width:100%;
+				    box-sizing:border-box;
+				    margin:0 0 2px;
+			    }
+			}
+		}
+
+		.nav-tab-active, 
+		.nav-tab-active:hover, 
+		.nav-tab-active:focus, 
+		.nav-tab-active:focus:active {
+		    border-bottom: 0;
+		    background: #fdfdfd;
+		    color: #000;
+		}
+		
+		.xt-refresh-link {
+		    float: right;
+		    text-decoration: none;
+		    font-size: 16px;
+		
+			.dashicons{
+			    font-size: 18px;
+			    width:18px;
+			    height:18px;
+		    }
+		}
+		
+		.wooqv-welcome-section {
+	    	box-shadow: 0 0px 10px 0 rgba(24, 24, 24, 0.07);
+			background: #fdfdfd;
+			padding:30px 25px;
+			overflow: hidden;
+			
+			h3{
+				position:relative;
+				top:-5px;
+				margin: 0 0 .6em;
+				display: inline-block
+			}
+			h4{
+				margin-top:0;
+			}			
+	    }
+	    
+	    .wooqv-links-section{
+		    
+		    overflow: hidden;
+		    
+		 	a{
+			 	display: block;
+			 	margin:0 0 20px;
+			 	outline: none;
+			 	float:left;
+			 	clear:both;
+			 	box-shadow:none;
+		    }
+		    a:hover,
+		    a:focus {
+		        outline: none;
+		        box-shadow:none;
+		    }   
+	    }
+	
+		.wooqv-support-section{
+		    padding: 0;
+			
+			a {
+			   
+			    text-align: center;
+			    padding: 30px;
+			    display: block;
+			    font-size: 35px;
+			    color:#242424;
+			    text-decoration:none;    
+			
+				&:hover{
+				    background-color: #242424;
+				    color: #f9f9f9;
+				}
+			
+				span {
+				    font-size: 60px;
+				    overflow:hidden;
+				    width: inherit;
+				    height: inherit;
+				    vertical-align: middle;
+				    line-height: 50px;
+				    margin-right: 10px;
+				}
+				em{
+					display:block;
+				    color:red;
+				    font-size:16px;
+				}
+				@media screen and (max-width: 782px) {
+			
+				    &{
+					    padding: 20px;
+					    font-size: 18px;
+					    
+					    span{
+						    font-size: 30px;
+						    line-height: 30px;
+					    }
+				    }
+				}
+		
+			}
+		}
+		
+		
+		.wooqv-fullversion-section{
+		    padding-top:15px;
+			p{
+			    font-size:18px;
+			}
+			ul{
+			    list-style: square;
+			    padding-left:20px;
+			}
+			.button{
+				margin-top: 10px;
+				font-size: 15px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	&.rtl #wpbody-content .wooqv-version {
+		left:0;
+		right:inherit;
+	}
+}
+
+
+/* Changelog */
+.wooqv-changelog{
+	
+	h4{
+		margin-top:0;
+	}
+	ul {
+		padding:0px;
+		border: 1px solid #eee;
+		border-radius: 3px;
+		background: #fff;
+		overflow: hidden;
+		margin: 0 0 30px 0;
+		li {
+			margin: 0!important;
+			display:block;
+			padding: 8px 10px;
+			box-sizing: border-box;
+			position: relative;
+			overflow: hidden;
+		
+			strong{
+				background:#ffffcc;
+				color:#000;
+				padding:1px 5px;
+				border-radius:3px;
+			}
+		
+		
+			&:nth-child(even){
+				background: #f9f9f9;
+			}
+			
+			.update-type{
+				padding:1px 8px;
+				display: block;
+				border-radius: 3px;
+				text-align: center;
+				width: 70px;
+				float: left;
+				box-sizing: border-box;
+				font-size:12px;
+				line-height: 24px;
+				color: #181818;
+			}
+			.update-txt{
+				display: block;
+				padding-left: 85px;
+				box-sizing: border-box;
+				color: #181818;
+				line-height: 26px;
+				font-size: 14px;
+
+				a {
+				 	color: #000;
+					text-decoration: none;
+					cursor: pointer;
+				}
+			}
+	
+			span.initial{
+				background: rgb(228, 228, 169);
+			}
+			span.fix{
+				background: rgb(244, 197, 197);
+			}
+			span.new{
+				background: rgb(175, 231, 175);
+			}
+			span.enhance{
+				background: rgb(190, 212, 242);
+			}
+			span.update{
+				background: rgba(26, 224, 181, 0.3);
+			}
+			span.support{
+				background: rgba(203, 160, 255, 0.38);
+			}
+			span.extension{
+				background: rgba(255, 152, 0, 0.50);
+			}
+		}	
+	}	
+}

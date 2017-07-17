@@ -1,0 +1,883 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Woo Floating Cart\n"
+"POT-Creation-Date: 2016-12-01 10:55-0500\n"
+"PO-Revision-Date: 2016-11-02 23:44-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: woo-floating-cart.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: admin/class-admin.php:47
+msgid "Change Log"
+msgstr ""
+
+#: admin/class-admin.php:48
+msgid "Links"
+msgstr ""
+
+#: admin/class-admin.php:49
+msgid "Support"
+msgstr ""
+
+#: admin/class-admin.php:54 admin/partials/sections/fullversion.php:15
+msgid "Buy Full Version"
+msgstr ""
+
+#: admin/class-admin.php:77
+#, php-format
+msgid "<strong>%1$s</strong> plugin requires %2$s to be installed and active."
+msgstr ""
+
+#: admin/class-admin.php:137
+#, php-format
+msgid "Thank you for upgrading %s to Full Version!"
+msgstr ""
+
+#: admin/class-admin.php:138
+msgid "Start Customizing"
+msgstr ""
+
+#: admin/class-admin.php:197
+msgid "Activate License"
+msgstr ""
+
+#: admin/class-admin.php:200
+msgid "License Activated"
+msgstr ""
+
+#: admin/class-admin.php:218
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/class-core.php:490 includes/class-core.php:499
+#: includes/class-migration.php:99 includes/class-migration.php:108
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/class-license.php:218 includes/class-license.php:288
+#, php-format
+msgid "Your license of %1$s is %2$s."
+msgstr ""
+
+#: includes/class-license.php:220
+msgid "Not Activated"
+msgstr ""
+
+#: includes/class-license.php:245
+msgid "Purchase Code..."
+msgstr ""
+
+#: includes/class-license.php:246
+msgid "Validate"
+msgstr ""
+
+#: includes/class-license.php:251
+msgid "This purchase code is activated somewhere else."
+msgstr ""
+
+#: includes/class-license.php:257
+msgid "Cancel"
+msgstr ""
+
+#: includes/class-license.php:258
+msgid "Buy License"
+msgstr ""
+
+#: includes/class-license.php:259
+msgid "Revoke"
+msgstr ""
+
+#: includes/class-license.php:268
+#, php-format
+msgid "This purchase code is %1$s."
+msgstr ""
+
+#: includes/class-license.php:269
+msgid "Invalid"
+msgstr ""
+
+#: includes/class-license.php:290
+msgid "Activated"
+msgstr ""
+
+#: includes/class-license.php:301
+#, php-format
+msgid "Automated updates are now %1$s"
+msgstr ""
+
+#: includes/class-license.php:302
+msgid "Enabled"
+msgstr ""
+
+#: includes/class-update-checker.php:761
+msgid "Check for updates"
+msgstr ""
+
+#: includes/class-update-checker.php:805
+msgid "This plugin is up to date."
+msgstr ""
+
+#: includes/class-update-checker.php:807
+msgid "A new version of this plugin is available."
+msgstr ""
+
+#: includes/class-update-checker.php:809
+#, php-format
+msgid "Unknown update checker status \"%s\""
+msgstr ""
+
+#: includes/customizer/class-customizer.php:54
+#: includes/customizer/class-customizer.php:60
+msgid "Customize"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: includes/customizer/class-customizer.php:88
+msgid "WooCommerce Floating Cart"
+msgstr ""
+
+#: includes/customizer/class-customizer.php:99
+msgid "General Settings"
+msgstr ""
+
+#: includes/customizer/class-customizer.php:107
+msgid "Typography"
+msgstr ""
+
+#: includes/customizer/class-customizer.php:115
+msgid "Cart Trigger"
+msgstr ""
+
+#: includes/customizer/class-customizer.php:123
+msgid "Cart Header"
+msgstr ""
+
+#: includes/customizer/class-customizer.php:131
+msgid "Cart List"
+msgstr ""
+
+#: includes/customizer/class-customizer.php:139
+msgid "Cart Footer"
+msgstr ""
+
+#: includes/customizer/fields/footer.php:5
+msgid "Cart Checkout Button Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/footer.php:9
+#: includes/customizer/fields/footer.php:52
+#: includes/customizer/fields/header.php:120
+#: includes/customizer/fields/list.php:55
+#: includes/customizer/fields/list.php:122
+#: includes/customizer/fields/list.php:166
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:163
+msgid "Color"
+msgstr ""
+
+#: includes/customizer/fields/footer.php:10
+#: includes/customizer/fields/footer.php:53
+#: includes/customizer/fields/header.php:121
+#: includes/customizer/fields/list.php:56
+#: includes/customizer/fields/list.php:123
+#: includes/customizer/fields/list.php:167
+msgid "Hover"
+msgstr ""
+
+#: includes/customizer/fields/footer.php:48
+msgid "Cart Checkout Button Text Color"
+msgstr ""
+
+#: includes/customizer/fields/general.php:6
+msgid "Keep visible on empty"
+msgstr ""
+
+#: includes/customizer/fields/general.php:15
+msgid "Trigger / Cart Position"
+msgstr ""
+
+#: includes/customizer/fields/general.php:19
+#: includes/customizer/fields/general.php:43
+msgid "Top Left"
+msgstr ""
+
+#: includes/customizer/fields/general.php:20
+#: includes/customizer/fields/general.php:44
+msgid "Top Right"
+msgstr ""
+
+#: includes/customizer/fields/general.php:21
+#: includes/customizer/fields/general.php:45
+msgid "Bottom Left"
+msgstr ""
+
+#: includes/customizer/fields/general.php:22
+#: includes/customizer/fields/general.php:46
+msgid "Bottom Right"
+msgstr ""
+
+#: includes/customizer/fields/general.php:39
+msgid "Product Counter Position"
+msgstr ""
+
+#: includes/customizer/fields/general.php:62
+msgid "Horizontal Offset"
+msgstr ""
+
+#: includes/customizer/fields/general.php:101
+msgid "Vertical Offset"
+msgstr ""
+
+#: includes/customizer/fields/general.php:140
+msgid "Border Radius"
+msgstr ""
+
+#: includes/customizer/fields/header.php:6
+msgid "Cart Header Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/header.php:28
+msgid "Cart Header Bottom Border Color"
+msgstr ""
+
+#: includes/customizer/fields/header.php:50
+msgid "Cart Header Title Color"
+msgstr ""
+
+#: includes/customizer/fields/header.php:72
+#: includes/customizer/fields/header.php:94
+msgid "Cart Header Undo Msg Color"
+msgstr ""
+
+#: includes/customizer/fields/header.php:116
+msgid "Cart Header Undo Link Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:6
+msgid "Cart Body Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:28
+msgid "Cart Body Text Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:51
+msgid "Cart Product Title Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:94
+msgid "Cart Product Price Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:118
+msgid "Cart Product Remove Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:162
+msgid "Cart Product Qty Plus Minus Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:206
+msgid "Cart Product Qty Input Color"
+msgstr ""
+
+#: includes/customizer/fields/list.php:228
+msgid "Cart Product Qty Plus Minus Size"
+msgstr ""
+
+#: includes/customizer/fields/list.php:264
+msgid "Cart Product Qty Input Size"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:6
+msgid "Trigger Icon Type"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:9
+msgid "Image / SVG"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:10
+msgid "Font Icon"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:26
+msgid "Cart Trigger Icon"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:50
+msgid "Cart Trigger Close Icon"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:74
+msgid "Cart Trigger Icon Image"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:103
+msgid "Cart Trigger Close Icon Image"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:133
+msgid "Cart Trigger Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:155
+msgid "Cart Trigger Hover Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:177
+msgid "Cart Trigger Active Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:199
+msgid "Product Counter Bg Color"
+msgstr ""
+
+#: includes/customizer/fields/trigger.php:221
+msgid "Product Counter Text Color"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:8
+msgid "Product Counter Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:33
+msgid "Header Title Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:60
+msgid "Header Undo Message Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:87
+msgid "Header No Products Message Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:115
+msgid "Product Title / Price Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:151
+msgid "Product Remove Link Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:187
+msgid "Product Quantity Input Typography"
+msgstr ""
+
+#: includes/customizer/fields/typography.php:221
+msgid "Footer Checkout Button Typography"
+msgstr ""
+
+#: includes/customizer/include-xtkirki.php:66
+msgid "Install Now"
+msgstr ""
+
+#: includes/customizer/include-xtkirki.php:72
+#, php-format
+msgid ""
+"The plugin is installed but not activated. Please <a href=\"%s\">activate "
+"it</a>."
+msgstr ""
+
+#: includes/customizer/include-xtkirki.php:91
+#, php-format
+msgid ""
+"If you wish to customize the look & feel of %sWooCommerce Floating Cart%s, "
+"please install the required %sXT Customizer Kit%s plugin."
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:104
+msgid "Background Color"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:105
+msgid "Background Image"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:106
+msgid "No Repeat"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:107
+msgid "Repeat All"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:108
+msgid "Repeat Horizontally"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:109
+msgid "Repeat Vertically"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:110
+msgid "Inherit"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:111
+msgid "Background Repeat"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:112
+msgid "Cover"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:113
+msgid "Contain"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:114
+msgid "Background Size"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:115
+msgid "Fixed"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:116
+msgid "Scroll"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:117
+msgid "Background Attachment"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:118
+msgid "Left Top"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:119
+msgid "Left Center"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:120
+msgid "Left Bottom"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:121
+msgid "Right Top"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:122
+msgid "Right Center"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:123
+msgid "Right Bottom"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:124
+msgid "Center Top"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:125
+msgid "Center Center"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:126
+msgid "Center Bottom"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:127
+msgid "Background Position"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:128
+msgid "Background Opacity"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:129
+msgid "ON"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:130
+msgid "OFF"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:131
+msgid "All"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:132
+msgid "Cyrillic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:133
+msgid "Cyrillic Extended"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:134
+msgid "Devanagari"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:135
+msgid "Greek"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:136
+msgid "Greek Extended"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:137
+msgid "Khmer"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:138
+msgid "Latin"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:139
+msgid "Latin Extended"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:140
+msgid "Vietnamese"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:141
+msgid "Hebrew"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:142
+msgid "Arabic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:143
+msgid "Bengali"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:144
+msgid "Gujarati"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:145
+msgid "Tamil"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:146
+msgid "Telugu"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:147
+msgid "Thai"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:148
+msgctxt "font style"
+msgid "Serif"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:149
+msgctxt "font style"
+msgid "Sans Serif"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:150
+msgctxt "font style"
+msgid "Monospace"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:151
+msgid "Font Family"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:152
+msgid "Font Size"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:153
+msgid "Font Weight"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:154
+msgid "Line Height"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:155
+msgid "Font Style"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:156
+msgid "Letter Spacing"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:157
+msgid "Top"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:158
+msgid "Bottom"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:159
+msgid "Left"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:160
+msgid "Right"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:161
+msgid "Center"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:162
+msgid "Justify"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:164
+msgid "Add Image"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:165
+msgid "Change Image"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:166
+msgid "No Image Selected"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:167
+msgid "Add File"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:168
+msgid "Change File"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:169
+msgid "No File Selected"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:170
+#: public/templates/parts/cart/list/product/actions.php:30
+msgid "Remove"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:171
+msgid "Select a font-family"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:172
+msgid "Variant"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:173
+msgid "Subset"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:174
+msgid "Size"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:175
+msgid "Height"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:176
+msgid "Spacing"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:177
+msgid "Ultra-Light 100"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:178
+msgid "Ultra-Light 100 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:179
+msgid "Light 200"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:180
+msgid "Light 200 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:181
+msgid "Book 300"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:182
+msgid "Book 300 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:183
+msgid "Normal 400"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:184
+msgid "Normal 400 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:185
+msgid "Medium 500"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:186
+msgid "Medium 500 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:187
+msgid "Semi-Bold 600"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:188
+msgid "Semi-Bold 600 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:189
+msgid "Bold 700"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:190
+msgid "Bold 700 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:191
+msgid "Extra-Bold 800"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:192
+msgid "Extra-Bold 800 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:193
+msgid "Ultra-Bold 900"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:194
+msgid "Ultra-Bold 900 Italic"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:195
+msgid "Invalid Value"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:196
+msgid "Add new"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:197
+msgid "row"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:198
+#, php-format
+msgid "Limit: %s rows"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:199
+#: includes/xtkirki/includes/sections/class-xtkirki-sections-hover-section.php:40
+msgid "Press return or enter to open this section"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:200
+#: includes/xtkirki/includes/sections/class-xtkirki-sections-hover-section.php:46
+msgid "Back"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:201
+#, php-format
+msgid "%s Reset"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:202
+msgid "Text Align"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:203
+msgid "Text Transform"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:204
+msgid "None"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:205
+msgid "Capitalize"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:206
+msgid "Uppercase"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:207
+msgid "Lowercase"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:208
+msgid "Initial"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:209
+msgid "Select a Page"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:210
+msgid "Open Editor"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:211
+msgid "Close Editor"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:212
+msgid "Switch Editor"
+msgstr ""
+
+#: includes/xtkirki/includes/class-xtkirki-l10n.php:213
+msgid "Hex Value"
+msgstr ""
+
+#: public/templates/parts/cart/footer.php:30
+msgid "Checkout"
+msgstr ""
+
+#: public/templates/parts/cart/header.php:29
+msgid "Cart"
+msgstr ""
+
+#: public/templates/parts/cart/header.php:30
+msgid "Item Removed."
+msgstr ""
+
+#: public/templates/parts/cart/header.php:30
+msgid "Undo"
+msgstr ""
+
+#: public/templates/parts/cart/list/empty.php:28
+msgid "No products in the cart."
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://woo-floating-cart.xplodedthemes.com"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"A WooCommerce floating cart that slides in when the user decides to buy an "
+"item. Fully customizable right from WordPress Customizer with Live Preview. "
+"Products, quantities and prices are updated instantly via Ajax."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "XplodedThemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.xplodedthemes.com"
+msgstr ""

@@ -1,0 +1,43 @@
+// breakpoints
+   
+$S:     400px;   
+$M:     768px;  
+$L:    1124px;   
+$XL:   1170px;     
+
+// media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+  @else if $canvas == XL {
+   @media only screen and (min-width: $XL) { @content; } 
+  }
+  @if $canvas == _S {
+   @media only screen and (max-width: ($S - 1)) { @content; } 
+  }
+  @if $canvas == _M {
+   @media only screen and (max-width: ($M - 1)) { @content; } 
+  }  
+  @if $canvas == _L {
+   @media only screen and (max-width: ($L - 1)) { @content; } 
+  } 
+  @if $canvas == _XL {
+   @media only screen and (max-width: ($XL - 1)) { @content; } 
+  }       
+}
+
+// super light grid - it works with the .cd-container class inside style.scss
+
+@mixin column($percentage, $float-direction:left) {
+  width: 100% * $percentage;
+  float: $float-direction;
+}
+

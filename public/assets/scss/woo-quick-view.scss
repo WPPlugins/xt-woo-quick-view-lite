@@ -1,0 +1,631 @@
+@import "bourbon/bourbon"; // http://bourbon.io/
+
+@import 'partials/variables'; // colors, fonts etc...
+
+@import 'partials/mixins'; // custom mixins
+
+@import 'partials/layout'; // responsive grid and media queries
+
+@import 'partials/spinkit'; // spinkit loaders
+
+
+/* -------------------------------- 
+
+Main Components 
+
+-------------------------------- */
+
+.woo-quick-view {
+	
+	overflow:hidden;
+	
+	@include box-sizing(border-box);
+	
+	*, *::after, *::before {
+		@include box-sizing(border-box);
+	}
+	
+	div::after, div::before {
+		content: '';
+	}
+		
+	.wooqv-touchevents & {
+		-webkit-user-select: none;
+		*{
+			-webkit-user-select: none;
+		}	
+	}
+}
+
+html {
+
+	.wooqv-overlay {
+		/* dark overlay layer - visible when we fire .wooqv-quick-view */
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		opacity: 0;
+		-webkit-transition: opacity .3s 0s, visibility 0s .3s;
+		-moz-transition: opacity .3s 0s, visibility 0s .3s;
+		transition: opacity .3s 0s, visibility 0s .3s;
+		background: rgba(71,55,78,0.8);
+		z-index: 9000;
+	}
+
+	&.wooqv-active .wooqv-overlay {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transition: opacity .3s 0s, visibility 0s 0s;
+		-moz-transition: opacity .3s 0s, visibility 0s 0s;
+		transition: opacity .3s 0s, visibility 0s 0s;
+	}
+}
+	
+.wooqv-active {
+
+	#wpadminbar.mobile{
+		display:none;
+	}
+}
+
+.wooqv-width-overflow,
+.wooqv-height-overflow{
+
+	&.wooqv-active{
+		
+		overflow:hidden;
+		body{
+			overflow: hidden;
+		}
+	
+		.woofc{
+			opacity:0;
+		}
+	}
+}	
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+
+.wooqv-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: 90%;
+	max-width: $XL; // breakpoints inside partials > _layout.scss
+	margin: 0 auto;
+	@include clearfix;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+
+.woocommerce .products .product {
+
+	&.empty-box::after {
+		/* box visible as placeholder when the .wooqv-quick-view zooms in */
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: darken($color-3, 5%);
+	}
+	
+	.wooqv-image-wrapper {
+    	position: relative;
+	}
+	
+	.wooqv-trigger{
+		
+		transition:opacity 0.3s, transform 0.3s, background-color 0.3s!important;
+		
+		.wooqv-trigger-icon {
+		    vertical-align: middle;
+		    margin-right: 5px;
+			line-height: 0;
+			position: relative;
+			top: -1px;
+			
+			&::before {
+				line-height: 0;
+			}
+		}	
+	
+		&.wooqv-above{
+			margin-bottom:5px!important;
+			margin-top:1em!important;
+			display:block!important;
+			
+			+ .button{
+				margin-top:0px!important;
+			}
+		}
+		&.wooqv-before{
+			margin-right:5px!important;
+			margin-left:0!important;
+		}
+		&.wooqv-after{
+			margin-left:5px!important;
+			margin-right:0!important;
+		}
+		&.wooqv-below{
+			margin-top:5px!important;
+			margin-bottom:0!important;
+			display:block!important;
+			
+			.wooqv-trigger-icon{
+				top: -2px;
+			}
+		}
+		&.wooqv-over-image {
+		    position:absolute!important;
+		    top:50%!important;
+		    left:50%!important;
+		    opacity: 0!important;
+		    transform: translateX(-50%) translateY(-50%) scale(0)!important;
+		    margin: 0!important;
+		}
+
+		&.wooqv-icontype-image .wooqv-trigger-icon{
+			
+		    display: inline-block;
+		    width: 16px;
+		    height: 16px;
+		    top: -1px;
+		    position: relative;		
+			    
+			&::before {
+			    content: '';
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    width: 100%;
+			    height: 100%;
+			    display: block;
+			}    
+		}
+		
+		&.wooqv-icon-only{
+			
+			.wooqv-trigger-icon{
+				margin-right:0;
+				line-height: 1;
+				display:block;
+				top: 0;
+				
+				&::before {
+					line-height: 1;
+				}
+			}
+		}
+					
+	}
+	
+	&:hover{
+
+		.wooqv-over-image {
+			opacity: 1!important;
+			transform: translateX(-50%) translateY(-50%) scale(1)!important;
+		}
+	}
+}
+
+.woo-quick-view {
+
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	width: 90%;
+	width: $mobile-slider-width;
+
+	/* Force Hardware Acceleration in WebKit */
+	@include transform(translateZ(0));
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	will-change: left, top, width;
+
+	@include clearfix;
+	z-index: 9010;
+
+	&.wooqv-is-visible {
+		/* class added when user clicks on .wooqv-trigger */
+		visibility: visible;
+	}
+
+	&.wooqv-animate-width {
+		/* class added at the end of the first zoom-in animation */
+		background-color: $color-4;
+		box-shadow: 0 0 30px rgba(#000, .2);
+		transition: box-shadow .3s;
+	}
+
+	a {
+		color: $color-2;
+		text-decoration: none;
+	}
+
+	@include MQ(L) {
+		width: $default-max-quick-width;
+	}
+	
+	@include MQ(_L) {
+		.wooqv-touchevents &{
+			padding-bottom:50px;
+		}
+	}
+
+	.wooqv-width-overflow &{
+
+		max-height: 100vh!important;
+		height:100vh!important;
+		width:100vw!important;
+		top: 0!important;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		
+		.wooqv-slider-wrapper {
+		    width: 100%!important;
+		}
+		.wooqv-more-info{
+			display:none;
+		}
+	}
+
+	.wooqv-height-overflow &{
+
+		max-height: 100vh!important;
+		top: 0!important;
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+		
+		.wooqv-touchevents &{
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+	
+	a.woocommerce-review-link {
+	    display: none;
+	}
+}
+
+.wooqv-slider-wrapper {
+	
+	position: relative;
+	display: block;
+	float:none;
+	width:$mobile-slider-width;
+	height: $mobile-slider-height;
+    overflow: hidden;
+    
+    .lSSlideOuter,
+    .lSSlideWrapper{
+	    height:100%;
+    }
+
+	.lSGallery {
+	    position: absolute;
+	    left: 0;
+	    width: 100%;
+	    z-index: 1000;
+	 	opacity:0;
+	 	bottom: -20%;
+	 	transition: bottom 0.5s, transform 0.5s, opacity 0.5s!important;
+
+		li{
+			
+			border-radius: 0!important;
+			position:relative;
+			margin-bottom: 0;
+
+			img{
+				border: 0;
+			}
+			
+			&:after{
+			    content:'';
+			    position:absolute;
+			    width:100%;
+			    height:100%;
+			    border-width: 5px;
+			    border-style: solid;
+			    border-color: rgba(164, 100, 151, 0.8);
+			    top: 0;
+			    left: 0;
+			    transform:scale(0);
+			    opacity:0;
+			    transition:transform 0.3s, opacity 0.3s;				
+			}
+			&.active {
+				
+				&:after{				
+					transform:scale(1);
+					opacity:1;
+			    }
+
+			}
+						
+			.wooqv-grayscale-transition &{
+				filter: grayscale(100%);
+				transition:filter 0.5s;
+				
+				&.active{
+					filter: grayscale(0%);
+					transition:filter 0.5s 0.2s;
+				}
+			}
+			
+		    
+		    .wooqv-thumb-nav-circled & img{
+			    border-radius: 100%;
+		    }
+		}
+	}
+	
+ 	.wooqv-add-content:not(.wooqv-thumbs-visible-onhover) &,
+ 	.wooqv-add-content.wooqv-thumbs-visible-onhover &:hover,
+ 	.wooqv-add-content.wooqv-thumbs-visible-onhover.wooqv-preview-gallery &{
+	 	
+	 	.lSGallery {
+			bottom: -1px; 	
+			opacity:1;
+		}
+ 	}
+	
+	.lSAction{
+
+		.lSPrev,
+		.lSNext{
+			margin-top: 0!important;
+			opacity: 0;
+			transition: color 0.5s, transform 0.5s, opacity 0.5s!important;
+			background: none;
+			display: block;
+			font-size: 40px;
+			width: inherit;
+			height: inherit;
+			cursor: pointer;
+			
+			span{
+				display: block;
+			}
+		}
+		.lSPrev{
+			transform: translateY(-50%) translateX(-100%);
+		}
+		.lSNext{
+			transform: translateY(-50%) translateX(100%);
+			
+			span{
+				transform:rotate(-180deg);
+			}
+		}
+		
+		.wooqv-add-content & .lSPrev,
+		.wooqv-add-content & .lSNext{
+			transform: translateY(-50%) translateX(0);
+			opacity:1;
+	 	}
+	}
+	
+	
+	@include clearfix;
+	
+	@include MQ(L) {
+
+		width:$desktop-slider-width;
+		height: $desktop-slider-height;	
+		display: inline-block;
+		float: left;
+	}
+	
+	@include MQ(_L) {
+
+		width:100%;
+	}
+}
+
+.wooqv-slider {
+	float: left;
+	list-style: none;
+    margin: 0;
+    padding: 0;
+    height: initial!important;
+    position: initial!important;
+       
+	li {
+
+		.wooqv-grayscale-transition &{
+			filter: grayscale(100%);
+			transition:filter 0.5s, opacity 0.3s;
+			
+			&.active{
+				filter: grayscale(0);
+				transition:filter 0.5s 0.2s, opacity 0.3s 0.1s;
+			}
+		}
+			
+		a{
+			display: block;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+			height:auto;
+			border-radius: 0;
+		}
+
+	}
+	
+	@include MQ(L) {
+		
+		li{
+			img{
+				width: $desktop-slider-width;
+			}
+		}
+	}
+
+}
+
+.wooqv-item-info {
+
+    padding: 2.5em;
+	position: absolute;
+	visibility: hidden;
+	opacity: 0;
+	height: inherit;
+	
+	overflow-y: auto;
+	-webkit-transition: opacity .3s, visibility 0s;
+	-moz-transition: opacity .3s, visibility 0s;
+	transition: opacity .3s, visibility 0s;
+	
+	@include MQ(L) {
+		padding: 3em 3em;
+		height: $desktop-slider-height;
+	}
+
+	.product_title {
+		clear: none!important;
+	}
+
+	p {
+		line-height: 1.6;
+		margin: 1em 0;
+		color: lighten($color-1, 20%);
+		max-height: 110px;
+		overflow: hidden;
+	}
+
+	.add-to-cart {
+		@include appearance(none);
+		@include border-radius;
+		border: none;
+		padding: .6em 1.2em;
+		background-color: $color-2;
+		color: $color-4;
+		@include font-smoothing;
+		font-family: $primary-font;
+		@include font-size(16px);
+		cursor: pointer;
+	}
+	
+	.quantity .qty{
+		display:block;
+		-webkit-appearance: initial;
+	}
+
+	form.cart{
+    	margin: 20px 0 0!important;
+	}
+	
+	button a{
+		text-decoration: none;
+		color:inherit;
+	}
+	
+	.wooqv-button{
+		margin-left:5px!important;
+	}
+	
+	.wooqv-error{
+	    border: 1px solid red;
+	    padding: 15px!important;
+	    transition: all 0.3s;
+	}
+
+	.wooqv-add-content & {
+		/* class added at the end of the width animation, used to show the content */
+		position: relative;
+		visibility: visible;
+		float: left;
+		width: 100%;
+		opacity: 1;
+
+		.product_title {
+			@include animation(wooqv-slide-in .3s);
+		}
+
+		p {
+			@include animation(wooqv-slide-in .4s);
+		}
+
+		form, .product_meta, .button {
+			@include animation(wooqv-slide-in .5s);
+			outline: none!important;
+		}
+		
+		.product_meta > * {
+		    display: block;
+		    margin-bottom:10px;
+		}
+		
+		.woocommerce-variation {
+		    margin-bottom: 15px;
+		}
+
+		@include MQ(L) {
+			width:$default-max-quick-width - $desktop-slider-width;
+		}
+	}
+}
+
+@include keyframes(wooqv-slide-in) {
+	0% {
+		@include transform(translate3d(-40px, 0, 0));
+	}
+
+	100% {
+		@include transform(translate3d(0, 0, 0));
+	}
+}
+
+.wooqv-close-icon {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: inline-block;
+	z-index: 100;
+	cursor: pointer;
+
+	/* image replacement */
+	overflow: hidden;
+	white-space: nowrap;
+	visibility: hidden;
+	transform: scale(0);
+	transition: transform .3s 0s, visibility 0s .3s;
+
+	.wooqv-no-touchevents &:hover {
+		transform: scale(1.1);
+	}
+
+	.wooqv-add-content & {
+		visibility: visible;
+		transform: scale(1);
+		transition: transform .3s 0s, visibility 0s 0s;
+	}
+
+}
+
+	
+
+.single-product .wooqv-more-info{
+	display:none!important;
+}
+
+
+
+/* Fixes */
+.woocommerce .woo-quick-view div.product form.cart .variations_button {
+    clear: inherit;
+    display: inherit;
+    padding: inherit;
+}

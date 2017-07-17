@@ -1,0 +1,1 @@
+!function($){"use strict";var n={};n.notices={init:function(){setTimeout(function(){$(".wooqv-notice").each(function(){$(this).prependTo("#wpbody-content")})},10)}},$(document).ready(function(){n.notices.init()})}(jQuery);

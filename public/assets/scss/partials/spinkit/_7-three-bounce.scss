@@ -1,0 +1,40 @@
+/*
+ *  Usage:
+ *
+      <div class="wooqv-spinner-three-bounce">
+        <div class="wooqv-spinner-child wooqv-spinner-bounce1"></div>
+        <div class="wooqv-spinner-child wooqv-spinner-bounce2"></div>
+        <div class="wooqv-spinner-child wooqv-spinner-bounce3"></div>
+      </div>
+ *
+ */
+ @import "../variables";
+
+.wooqv-spinner-three-bounce {
+  $animationDuration: 1.4s;
+  $delayRange: 0.32s;
+  margin: $spinkit-spinner-margin;
+  width: $spinkit-spinner-size * 2;
+  text-align: center;
+
+  .wooqv-spinner-child {
+    width: $spinkit-spinner-size / 2;
+    height: $spinkit-spinner-size / 2;
+    background-color: $spinkit-spinner-color;
+
+    border-radius: 100%;
+    display: inline-block;
+    animation: wooqv-spinner-three-bounce $animationDuration ease-in-out 0s infinite both;
+  }
+
+  .wooqv-spinner-bounce1 { animation-delay: $delayRange; }
+  .wooqv-spinner-bounce2 { animation-delay: $delayRange / 2; }
+}
+
+@keyframes wooqv-spinner-three-bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  } 40% {
+    transform: scale(1.0);
+  }
+}
